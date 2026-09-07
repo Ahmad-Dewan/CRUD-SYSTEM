@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>crud system</title>
+  </head>
+  <body>
+
+    <div class="w-75 container py-5">
+
+      <label for="productName">productName</label>
+      <input type="text" name="productName" id="productName"
+        class="form-control my-3">
+
+      <label for="productPrice">productPrice</label>
+      <input type="number" name="productPrice" id="productPrice"
+        class="form-control my-3">
+
+      <label for="productCat">productCat</label>
+      <input type="text" name="productCat" id="productCat"
+        class="form-control my-3">
+
+      <label for="productDesc">productDesc</label>
+      <input type="text" name="productDesc" id="productDesc"
+        class="form-control my-3">
+
+      <button class="btn btn-outline-danger my-3" onclick="addProduct()">Add Product</button>
+
+      <input type="text" name="searchProduct" id="searchProduct"
+        class="form-control my-3"
+        placeholder="search......." onkeyup="searchProduct(this.value)">
+
+    </div>
+
+    <div class="w-75 container">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Index</th>
+            <th>productName</th>
+            <th>productPrice</th>
+            <th>productCat</th>
+            <th>productDesc</th>
+            <th>Update</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody id="rowData" >
+
+        </tbody>
+      </table>
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+  </body>
+
+</html>
